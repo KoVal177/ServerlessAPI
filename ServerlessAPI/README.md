@@ -1,1 +1,0 @@
-A simple api application using Azure serverless functions.
