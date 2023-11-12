@@ -24,7 +24,7 @@ namespace ServerlessAPI
         [FunctionName("ProductsGetByIdUpdateDelete")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous,
-            "get", "post", "delete", Route = "products/{id}")]
+            "get", "put", "delete", Route = "products/{id}")]
             HttpRequest req, int id)
         {
             if (req.Method == HttpMethods.Get)
